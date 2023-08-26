@@ -52,8 +52,20 @@ Install the required Python packages:
 pip install -r requirements.txt
 ```
 
+## Setting Up MySQL Database Connection
 
-Create ".env" file in Back directory (django_redux_project/Back) and add the following lines:
+Before creating the `.env` file, make sure you have a MySQL database connection set up. Follow these steps:
+
+1. Install and set up MySQL Server on your machine if you haven't already.
+2. Open MySQL Workbench or your preferred MySQL client.
+3. Create a new MySQL connection:
+   - Host: `YourDatabaseHost` (e.g., `localhost` or IP address)
+   - Port: `YourDatabasePort` (e.g., `3306`)
+   - Username: `YourDatabaseUser` (e.g., `root`)
+   - Password: `YourPassword`
+4. Test the connection to ensure it's working correctly.
+
+Now that you have a functional MySQL connection, you can proceed to create the `.env` file in the Back directory with the following configuration:
 
 ```
 # Replace with your actual values
